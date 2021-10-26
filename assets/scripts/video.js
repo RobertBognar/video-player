@@ -142,7 +142,7 @@ function hideControls() {
     }
 
     videoCtrl.classList.add('hide');
-    
+
 }
 video.addEventListener('mouseleave', hideControls);
 videoCtrl.addEventListener('mouseleave', hideControls);
@@ -152,3 +152,30 @@ function showControls() {
 }
 video.addEventListener('mouseenter', showControls);
 videoCtrl.addEventListener('mouseenter', showControls);
+
+//Playback Speed Rate Functions
+
+function halfSpeedRate() {
+    video.playbackRate = 0.5;
+}
+zeroFiveButton.addEventListener('click', halfSpeedRate);
+
+function zeroSevenFiveRate() {
+    video.playbackRate = 0.75;
+}
+zeroSevenFiveButton.addEventListener('click', zeroSevenFiveRate);
+
+function normalSpeedRate() {
+    video.playbackRate = 1;
+}
+normalSpeedButton.addEventListener('click', normalSpeedRate);
+
+function oneAndHalfSpeedRate() {
+    video.playbackRate = 1.5;
+}
+oneFiveButton.addEventListener('click', oneAndHalfSpeedRate);
+
+function doubleSpeedRate() {
+    video.playbackRate = 2;
+}
+doubleSpeedButton.addEventListener('click', doubleSpeedRate);

@@ -324,4 +324,36 @@ svg {
   stroke: #fefefe;
   cursor: pointer;
 }
+
+.playback-rate-buttons {
+  position: absolute;
+  margin-left: 22%;
+  margin-top: 20.3%;
+  max-width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
+
+.playback-rate-buttons button {
+  color: #fefefe;
+  background: transparent;
+}
+
+.playback-rate-buttons button:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 1px #f00 solid;
+}
+
+.playback-rate-buttons button:hover {
+  color: #cabebe;
+}
+
+p {
+  position: absolute;
+  color: #fefefe;
+  margin-left: 5%;
+  margin-top: 20.2%;
+  font-family: "Source Sans Pro", sans-serif;
+}
 /*# sourceMappingURL=style.css.map */

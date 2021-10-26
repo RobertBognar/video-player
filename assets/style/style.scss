@@ -275,3 +275,32 @@ svg {
     stroke: $whiteColor;
     cursor: pointer;
 }
+
+.playback-rate-buttons {
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 20.3%;
+    max-width: 100%;
+    font-family: $font;
+    font-size: 16px;
+    button {
+        color: $whiteColor;
+        background: transparent;
+        &:active {
+            transform: scale(1.2);
+            border: 1px $redYoutubeColor solid;
+        }
+        &:hover {
+            color: $buttonHover;
+        }
+    }
+}
+
+p {
+    position: absolute;
+    color: $whiteColor;
+    margin-left: 5%;
+    margin-top: 20.2%;
+    font-family: $font;
+}
+

@@ -142,6 +142,7 @@ function hideControls() {
     }
 
     videoCtrl.classList.add('hide');
+    
 }
 video.addEventListener('mouseleave', hideControls);
 videoCtrl.addEventListener('mouseleave', hideControls);

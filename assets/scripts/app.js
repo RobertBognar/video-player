@@ -19,6 +19,12 @@ const fullscreenButton = getByid('fullscreen-button');
 const videoContainer = getByid('video-container');
 const fullscreenIcons = fullscreenButton.querySelectorAll('use');
 const doesVideoWorks = !!document.createElement('video').canPlayType;
+const zeroFiveButton = getByid('zerofive');
+const zeroSevenFiveButton = getByid('zerosevenfive');
+const normalSpeedButton = getByid('normal');
+const oneFiveButton = getByid('onefive');
+const doubleSpeedButton = getByid('double');
+const rateButtons = getByid('rate');
 
 //Defining getElementById, querySelector & querySelectorAll through function for code shortening
 function getByid(param) {

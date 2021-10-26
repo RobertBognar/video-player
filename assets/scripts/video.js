@@ -133,6 +133,7 @@ function updateFullscreenButton() {
     }
 }
 videoContainer.addEventListener('fullscreenchange', updateFullscreenButton);
+fullscreenButton.addEventListener('click', updateFullscreenButton);
 
 //Hide Or Show Controls Depends On If We Are Using them
 function hideControls() {

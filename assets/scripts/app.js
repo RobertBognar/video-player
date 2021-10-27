@@ -42,5 +42,5 @@ function getSelectorAll(param) {
 }
 
 window.onload = function () {
-    body.reset();
+    videoContainer.reset();
 }

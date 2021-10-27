@@ -183,8 +183,8 @@ doubleSpeedButton.addEventListener('click', doubleSpeedRate);
 //Remove & Add Playback Rate
 function showHide() {
     if (buttons.style.display === 'none') {
-        buttons.style.display = "block";
+        buttons.style.display = 'block';
     } else {
-        buttons.style.display = "none"
+        buttons.style.display = 'none'
     }
 }

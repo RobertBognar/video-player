@@ -89,7 +89,7 @@ function skipAhead(e) {
     progressBar.value = skipTo;
     seek.value = skipTo;
 }
-seek.addEventListener('input', skipAhead);
+seek.addEventListener('click', skipAhead);
 
 function playback() {
     playbackAnimation.animate(

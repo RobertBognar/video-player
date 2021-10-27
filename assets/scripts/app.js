@@ -27,6 +27,7 @@ const doubleSpeedButton = getByid('double');
 const rateButtons = getByid('rate');
 const playbackDiv = getByid('playback');
 const buttons = getByid('rate-buttons');
+const body = getSelectorAll('body');
 //Defining getElementById, querySelector & querySelectorAll through function for code shortening
 function getByid(param) {
     return document.getElementById(`${param}`);
@@ -38,4 +39,8 @@ function getSelector(param) {
 
 function getSelectorAll(param) {
     return document.querySelectorAll(`${param}`);
+}
+
+window.onload = function () {
+    body.reset();
 }

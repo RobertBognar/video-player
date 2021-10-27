@@ -163,6 +163,7 @@ progress::-moz-progress-bar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 2px;
 }
 
 .left-controls {
@@ -327,10 +328,21 @@ svg {
 
 .playback-rate-buttons {
   margin-bottom: -8px;
-  margin-left: 1.5%;
   max-width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
+}
+
+@media (max-width: 375px) {
+  .playback-rate-buttons {
+    margin-left: 3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .playback-rate-buttons {
+    margin-left: 1.5%;
+  }
 }
 
 .playback-rate-buttons button {
@@ -348,8 +360,7 @@ svg {
   color: lightgray;
 }
 
-.playback-rate-buttons .playback {
-  color: #fefefe;
-  font-family: "Source Sans Pro", sans-serif;
+.playback-rate-buttons img {
+  background: transparent;
 }
 /*# sourceMappingURL=style.css.map */

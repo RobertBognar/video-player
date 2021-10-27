@@ -29,6 +29,7 @@ function playBtnUpdate() {
 }
 video.addEventListener('play', playBtnUpdate);
 video.addEventListener('pause', playBtnUpdate);
+video.addEventListener('play', normalSpeedRate);
 
 //Formatting Time For Progress Bar & Time
 function formatTime(timeInSeconds) {

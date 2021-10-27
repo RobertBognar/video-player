@@ -142,7 +142,6 @@ function hideControls() {
     }
 
     videoCtrl.classList.add('hide');
-
 }
 video.addEventListener('mouseleave', hideControls);
 videoCtrl.addEventListener('mouseleave', hideControls);
@@ -179,3 +178,12 @@ function doubleSpeedRate() {
     video.playbackRate = 2;
 }
 doubleSpeedButton.addEventListener('click', doubleSpeedRate);
+
+//Remove & Add Playback Rate
+function showHide() {
+    if (buttons.style.display === "none") {
+        buttons.style.display = "block";
+    } else {
+        buttons.style.display = "none"
+    }
+}

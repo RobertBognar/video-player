@@ -79,7 +79,7 @@ function updateSeekStart(e) {
     const rect = video.getBoundingClientRect();
     seekStart.style.left = `${e.pageX - rect.left}px`;
 }
-seek.addEventListener('mousemove', updateSeekStart);
+seek.addEventListener('click', updateSeekStart);
 
 function skipAhead(e) {
     const skipTo = e.target.dataset.seek

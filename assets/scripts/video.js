@@ -80,6 +80,7 @@ function updateSeekStart(e) {
     seekStart.style.left = `${e.pageX - rect.left}px`;
 }
 seek.addEventListener('click', updateSeekStart);
+video.addEventListener('click', updateSeekStart);
 
 function skipAhead(e) {
     const skipTo = e.target.dataset.seek
@@ -90,6 +91,7 @@ function skipAhead(e) {
     seek.value = skipTo;
 }
 seek.addEventListener('click', skipAhead);
+video.addEventListener('click', skipAhead);
 
 function playback() {
     playbackAnimation.animate(

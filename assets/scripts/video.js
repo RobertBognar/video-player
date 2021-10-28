@@ -94,24 +94,24 @@ function skipAhead(e) {
 seek.addEventListener('click', skipAhead);
 video.addEventListener('click', skipAhead);
 
-// function playback() {
-//     playbackAnimation.animate(
-//         [
-//             {
-//                 opacity: 1,
-//                 transform: 'scale(1)',
-//             },
-//             {
-//                 opacity: 0,
-//                 transform: 'scale(1.3)',
-//             },
-//         ],
-//         {
-//             duration: 500,
-//         }
-//     );
-// }
-// video.addEventListener('click', playback);
+function playback() {
+    playbackAnimation.animate(
+        [
+            {
+                opacity: 1,
+                transform: 'scale(1)',
+            },
+            {
+                opacity: 0,
+                transform: 'scale(1.3)',
+            },
+        ],
+        {
+            duration: 500,
+        }
+    );
+}
+video.addEventListener('click', playback);
 
 //FULLSCREEN MODE Toggle, Updating Button
 function toggleFullScreen() {

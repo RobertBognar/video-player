@@ -89,6 +89,7 @@ function skipAhead(e) {
     video.currentTime = skipTo;
     progressBar.value = skipTo;
     seek.value = skipTo;
+    seekStart.value = skipTo;
 }
 seek.addEventListener('click', skipAhead);
 video.addEventListener('click', skipAhead);

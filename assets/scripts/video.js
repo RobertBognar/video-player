@@ -67,29 +67,14 @@ function progressUpdate() {
 }
 video.addEventListener('timeupdate', progressUpdate);
 
-//Skip To & Skip Ahead Function For Clicking On Progress Bar
-function updateSeekStart(e) {
-    const skipTo = Math.round(
-        (e.offsetX / e.target.clientWidth) *
-        parseInt(e.target.getAttribute('max'), 10)
-    );
-    seek.setAttribute('data-seek', skipTo);
-    const t = formatTime(skipTo);
-    seekStart.textContent = `${t.minutes}:${t.seconds}`;
-    const rect = video.getBoundingClientRect();
-    seekStart.style.left = `${e.pageX - rect.left}px`;
+//Skip To
+function clickToTime(event) {
+    const progressTime = (event.offsetX / seek.offsetWidth) * video.duration;
+    video.currentTime = progressTime;
 }
-seek.addEventListener('click', updateSeekStart);
-
-function skipAhead(e) {
-    const skipTo = e.target.dataset.seek
-        ? e.target.dataset.seek
-        : e.target.value;
-    video.currentTime = skipTo;
-    progressBar.value = skipTo;
-    seek.value = skipTo;
-}
-seek.addEventListener('click', skipAhead);
+seek.addEventListener('click', (e) => {
+    clickToTime(e);
+});
 
 function playback() {
     playbackAnimation.animate(
